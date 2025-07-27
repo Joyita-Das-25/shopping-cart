@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <form>
+<div class="card">
+            <div class="card-header">
+                <h1>Contact Us Form</h1>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-4">
+                        <label for="firstName">First Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="firstName" id="firstName"
+                            placeholder="Enter your first name" required>
+                    </div>
+                    <div class="col-4">
+                        <label for="middleName">Middle Name</label>
+                        <input type="text" class="form-control" name="middleName" id="middleName">
+                    </div>
+                    <div class="col-4">
+                        <label for="lastName">Last Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" name="lastName" id="lastName" required>
+                    </div>
+
+                </div>
+            </div>
+            <div class="card-footer">
+                <button class="btn btn-danger btn-lg" type="reset">Reset</button>
+                <button class="btn btn-success btn-lg" type="button">Save</button>
+                
+            </div>
+
+        </div>
+        </form>
+        
+    </div>
+
+
+
+
+
+
+
+    <form action="/submit-form" method="POST">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required class="form-control" >
+        <br><br>
+
+        <!-- Email-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <!-- Message Field -->
+        <label for="phone">Contact Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+</body>
+
+</html>

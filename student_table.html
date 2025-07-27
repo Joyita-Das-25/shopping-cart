@@ -1,0 +1,191 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        table.student-table,
+        .student-table th,
+        .student-table td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 10px 20px;
+            margin: 5px;
+
+        }
+
+
+        .student-table>tbody>tr>td {
+            text-align: center;
+        }
+
+        .student-table tbody>tr:nth-child(even) {
+            /* psudo element */
+            background-color: #c5c2c2;
+        }
+
+
+
+        .student-table {
+            width: 100%;
+        }
+
+        .student-table .table-header {
+            background-color: #570057;
+        }
+
+        .student-table .table-header>tr>th {
+            color: rgb(255, 254, 254);
+        }
+
+        .btn {
+            padding: 5px 10px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 0px;
+            color: #f1efef;
+        }
+
+        .btn-edit {
+            background-color: rgb(8, 114, 48);
+        }
+
+        .btn-delete {
+            background-color: rgb(167, 4, 4);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align:center;">Table</h1>
+
+    <table class="student-table">
+
+        <thead class="table-header">
+            <tr>
+                <th><b>Name</b></th>
+                <th><b>Roll</b></th>
+                <th><b>section</b></th>
+                <th><b>Action</b></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Joyita </td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">
+                        <i class="fa fa-pencil-square-o"></i>
+                        Edit</button>
+                    <button type="button" class="btn btn-delete">
+                        <i class="fa fa-trash"></i>
+                        Delete</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nick</td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">Edit</button>
+                    <button type="button" class="btn btn-delete">Delete</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>3</td>
+                <td>Priyanka</td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">Edit</button>
+                    <button type="button" class="btn btn-delete">Delete</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Priya</td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">Edit</button>
+                    <button type="button" class="btn btn-delete">Delete</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Neha</td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">Edit</button>
+                    <button type="button" class="btn btn-delete">Delete</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rupa</td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">Edit</button>
+                    <button type="button" class="btn btn-delete">Delete</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Khusboo</td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">Edit</button>
+                    <button type="button" class="btn btn-delete">Delete</button>
+                </td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Mahi</td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">Edit</button>
+                    <button type="button" class="btn btn-delete">Delete</button>
+                </td>
+
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Susmita</td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">Edit</button>
+                    <button type="button" class="btn btn-delete">Delete</button>
+                </td>
+
+            </tr>
+
+
+            <tr>
+                <td>10</td>
+                <td>Sumona</td>
+                <td>A</td>
+                <td>
+                    <button type="button" class="btn btn-edit">Edit</button>
+                    <button type="button" class="btn btn-delete">Delete</button>
+                </td>
+
+            </tr>
+
+
+        </tbody>
+
+
+
+
+    </table>
+
+
+</body>
+
+
+</html>
