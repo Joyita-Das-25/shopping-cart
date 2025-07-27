@@ -13,37 +13,37 @@
 
     <div class="container-fluid">
         <form>
-<div class="card">
-            <div class="card-header">
-                <h1>Contact Us Form</h1>
-            </div>
-            <div class="card-body">
-                <div class="row">
-                    <div class="col-4">
-                        <label for="firstName">First Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" name="firstName" id="firstName"
-                            placeholder="Enter your first name" required>
+            <div class="card">
+                <div class="card-header">
+                    <h1>Contact Us Form</h1>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-4">
+                            <label for="firstName">First Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="firstName" id="firstName"
+                                placeholder="Enter your first name" required>
+                        </div>
+                        <div class="col-4">
+                            <label for="middleName">Middle Name</label>
+                            <input type="text" class="form-control" name="middleName" id="middleName">
+                        </div>
+                        <div class="col-4">
+                            <label for="lastName">Last Name <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="lastName" id="lastName" required>
+                        </div>
+
                     </div>
-                    <div class="col-4">
-                        <label for="middleName">Middle Name</label>
-                        <input type="text" class="form-control" name="middleName" id="middleName">
-                    </div>
-                    <div class="col-4">
-                        <label for="lastName">Last Name <span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" name="lastName" id="lastName" required>
-                    </div>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-danger btn-lg" type="reset">Reset</button>
+                    <button class="btn btn-success btn-lg" type="button">Save</button>
 
                 </div>
-            </div>
-            <div class="card-footer">
-                <button class="btn btn-danger btn-lg" type="reset">Reset</button>
-                <button class="btn btn-success btn-lg" type="button">Save</button>
-                
-            </div>
 
-        </div>
+            </div>
         </form>
-        
+
     </div>
 
 
@@ -55,7 +55,7 @@
     <form action="/submit-form" method="POST">
         <!-- Name -->
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required class="form-control" >
+        <input type="text" id="name" name="name" required class="form-control">
         <br><br>
 
         <!-- Email-->
