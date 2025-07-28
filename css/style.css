@@ -1,19 +1,23 @@
 .box {
-    border: 1px solid #0d0e0d;
-    height: 100px;
-    width: 50%;
-    font-size: 20px;
-  }
-  .bgRed{ 
-    /* camelCase */
-    background-color: red;
-  }
-  .bgGreen{
-    background-color: rgb(19, 179, 4);
-  }
-  .bgBlue{
-    background-color: rgb(10, 76, 151);
-  }
-  .bgPurple{
-    background-color: rgb(116, 14, 233);
-  }
+  border: 1px solid #0d0e0d;
+  height: 100px;
+  width: 50%;
+  font-size: 20px;
+}
+.bgRed {
+  /* camelCase */
+  background-color: red;
+}
+.bgGreen {
+  background-color: rgb(19, 179, 4);
+}
+.bgBlue {
+  background-color: rgb(10, 76, 151);
+}
+.bgPurple {
+  background-color: rgb(116, 14, 233);
+}
+
+label{
+  font-weight: 500;
+}
