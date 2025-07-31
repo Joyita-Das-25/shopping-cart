@@ -115,7 +115,7 @@
                         </div>
                         <!--/row-->
                     </fieldset>
-                    <!--fieldset-->
+                    <!--/fieldset-->
                     <!--/Personal Information-->
 
 
@@ -178,93 +178,130 @@
                                 <button type="button" class="btn btn-danger btn-sm">Add New</button>
                             </div>
                         </div>
+
+
+
                     </fieldset>
                     <!--/fieldset-->
+
                 </div>
                 <!--/card-body-->
 
 
+                <!--Contact information-->
+                <!--Fieldset-->
+                <div class="card-body">
+                    <fieldset class="border rounded-3 p-3">
+                        <legend class="float-none w-auto px-2">Contact Information</legend>
+                        <!--row-->
+                        <div class="row">
+                            <!--Email Address 1-->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                                <label for="exampleFormControlInput1" class="form-label">Email address 1<span
+                                        class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="name@example.com" required>
+                            </div>
+                            <!--/Email Address 1-->
 
+                            <!--Email Address 2-->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                                <label for="exampleFormControlInput2" class="form-label">Email address 2<span
+                                        class="text-danger">*</span></label>
+                                <input type="email" class="form-control" id="exampleFormControlInput2"
+                                    placeholder="name@example.com" required>
+                            </div>
+                            <!--/Email Address 2-->
 
+                            <!--Contact No 1-->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                                <label for="contactNo">Contact No 1<span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" name="contactNo" id="contactNo1"
+                                    placeholder="Enter your contact No" required>
+                            </div>
+                            <!--/Contact No 1-->
 
-                <h1>Contact information</h1>
-                <div class="row">
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <label for="exampleFormControlInput1" class="form-label">Email address 1<span
-                                class="text-danger">*</span></label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
-                            placeholder="name@example.com" required>
-                    </div>
+                            <!--Contact No 2-->
+                            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                                <label for="contactNo">Contact No 2<span class="text-danger">*</span></label>
+                                <input type="number" class="form-control" name="contactNo" id="contactNo2"
+                                    placeholder="Enter your Others contact No" required>
+                            </div>
+                            <!--/Contact No 2-->
 
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <label for="exampleFormControlInput2" class="form-label">Email address 2<span
-                                class="text-danger">*</span></label>
-                        <input type="email" class="form-control" id="exampleFormControlInput2"
-                            placeholder="name@example.com" required>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <label for="contactNo">Contact No 1<span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" name="contactNo" id="contactNo1"
-                            placeholder="Enter your contact No" required>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <label for="contactNo">Contact No 2<span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" name="contactNo" id="contactNo2"
-                            placeholder="Enter your Others contact No" required>
-                    </div>
+                        </div>
+                        <!--/row-->
+                    </fieldset>
                 </div>
 
-                <h1>Address information</h1>
-                <div class="row">
 
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <label for="exampleFormControlTextarea1" class="form-label">Address Line 1<span
-                                class="text-danger">*</span></label>
-                        <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <!--Address Information-->
+                <!--fieldset-->
+                <fieldset class="border rounded-3 p-3">
+                    <legend class="float-none w-auto px-2">Address Information</legend>
+                    <!--row-->
+                    <div class="row">
+
+                        <!--Address Line 1-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                            <label for="exampleFormControlTextarea1" class="form-label">Address Line 1<span
+                                    class="text-danger">*</span></label>
+                            <textarea class="form-control mb-3" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <!--/Address Line 1-->
+
+                        <!--Address Line 2-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                            <label for="exampleFormControlTextarea2" class="form-label">Address Line 2<span
+                                    class="text-danger">*</span></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+                        </div>
+                        <!--/Address Line 2-->
+
+                        <!--Select your Country-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select your Country</option>
+                                <option value="india">India</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        <!--/Select your Country-->
+
+                        <!--Select your States-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Select your States</option>
+                                <option value="west_bengal">West Bengal</option>
+                                <option value="jharkhand">Jharkhand</option>
+                                <option value="odisha">Odisha</option>
+                                <option value="gujarat">Gujarat</option>
+                                <option value="others">Others</option>
+                            </select>
+                        </div>
+                        <!--/Select your States-->
+
+                        <!--Pin Code No-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                            <label for="pin_no">Pin code No<span class="text-danger">*</span></label>
+                            <input type="number" class="form-control" name="pin_no" id="pin"
+                                placeholder="Enter your Pin code No" required>
+                        </div>
+                        <!--/Pin Code No-->
+
+                        <!--Police Staton-->
+                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
+                            <label for="police_station">Police Station<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" name="police_station" id="policeStation"
+                                placeholder="Enter your Police Station" required>
+                        </div>
+                        <!--/Police Staton-->
+
+
+
                     </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <label for="exampleFormControlTextarea2" class="form-label">Address Line 2<span
-                                class="text-danger">*</span></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Select your Country</option>
-                            <option value="india">India</option>
-                            <option value="others">Others</option>
-                        </select>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Select your States</option>
-                            <option value="west_bengal">West Bengal</option>
-                            <option value="jharkhand">Jharkhand</option>
-                            <option value="odisha">Odisha</option>
-                            <option value="gujarat">Gujarat</option>
-                            <option value="others">Others</option>
-                        </select>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <label for="pin_no">Pin code No<span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" name="pin_no" id="pin"
-                            placeholder="Enter your Pin code No" required>
-                    </div>
-
-                    <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-2">
-                        <label for="police_station">Police Station<span class="text-danger">*</span></label>
-                        <input type="text" class="form-control" name="police_station" id="policeStation"
-                            placeholder="Enter your Police Station" required>
-                    </div>
-
-
-
-                </div>
+                    <!--/row-->
+                </fieldset>
 
 
 
