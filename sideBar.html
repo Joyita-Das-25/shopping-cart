@@ -11,15 +11,24 @@
       background-color: #f4f4f4;
     }
 
+	.menu-item {
+	  list-style-type: none;
+	  padding-left: 0;
+	}
+	.open{
+		width: 220px;
+	}
+	
     .sidebar {
       height: 100%;
-      width: 220px;
       position: fixed;
       top: 0;
       left: 0;
       background-color: #111;
       overflow-x: hidden;
       padding-top: 10px;
+	  transition: width 0.4s ease;
+	  width: 220px;
     }
 
     .sidebar .logo {
@@ -29,13 +38,14 @@
       padding: 0 20px 10px;
       display: flex;
       align-items: center;
+	  cursor: pointer;
     }
 
     .sidebar .logo i {
       margin-right: 10px;
     }
 
-    .sidebar input[type="text"] {
+    .sidebar.open input[type="text"] {
       width: 80%;
       margin: 10px auto;
       display: block;
@@ -45,8 +55,15 @@
       background-color: #2c2c2c;
       color: white;
     }
+	
+	.sidebar.close input[type="text"]{
+		display: none;
+	}
+	.sidebar.close .menu-item span{
+		display: none;
+	}
 
-    .sidebar a {
+    .menu-item > li > a {
       display: flex;
       align-items: center;
       padding: 12px 20px;
@@ -56,22 +73,27 @@
       transition: 0.3s;
     }
 
-    .sidebar a i {
-      margin-right: 12px;
+    .menu-item .menu-icon {
       width: 20px;
       text-align: center;
     }
 
-    .sidebar a:hover,
-    .sidebar a.active {
+    .menu-item a:hover,
+    .menu-item a.active {
       background-color: #f1f1f1;
       color: #000;
       border-radius: 10px;
       margin: 5px 10px;
     }
 
+	.ml-220{
+		margin-left: 220px;
+	}
+	
+	.ml-70{
+		margin-left: 70px;
+	}
     .main {
-      margin-left: 220px;
       padding: 20px;
     }
 
@@ -85,17 +107,17 @@
         width: 70px;
       }
 
-      .sidebar a span {
+      .menu-item > li > a span {
         display: none;
       }
 
       .main {
-        margin-left: 60px;
+        margin-left: 70px;
 
       }
 
-      .sidebar a:hover,
-      .sidebar a.active {
+      .menu-item a:hover,
+      .menu-item a.active {
         padding: 12px 13px;
         margin: 5px 20px 5px 10px;
       }
@@ -109,22 +131,53 @@
 
 <body>
 
-  <div class="sidebar">
-    <div class="logo">
-      <a onclick="toggleMenu()" id="sidenav"><i class="fas fa-bars"></i></a>
-    </div>
-    <input type="text" placeholder="Search..." id="search-textBox">
-    <a href="#" class="active"><i class="fas fa-border-all"></i><span>Dashboard</span></a>
-    <a href="#"><i class="fas fa-user"></i><span>User</span></a>
-    <a href="#"><i class="fas fa-envelope"></i><span>Messages</span></a>
-    <a href="#"><i class="fas fa-chart-line"></i><span>Analytics</span></a>
-    <a href="#"><i class="fas fa-folder-open"></i><span>File Manager</span></a>
-    <a href="#"><i class="fas fa-shopping-cart"></i><span>Order</span></a>
-    <a href="#"><i class="fas fa-bookmark"></i><span>Saved</span></a>
-    <a href="#"><i class="fas fa-cog"></i><span>Settings</span></a>
+  <div class="sidebar open" id="sidebar-menu">
+	<!--Logo -->
+		<div class="logo">
+		  <a onclick="toggleMenu()" id="hamburgerButton"><i class="fas fa-bars"></i></a>
+		</div>
+	<!--Logo--> 
+	
+	<!--Search Box-->	
+		<input type="text" placeholder="Search..." id="search-textBox">
+	<!--Search Box-->
+    
+	<!--Menu Item List -->
+	<ul class="menu-item">
+		<li>
+			<a href="#" class="active">
+				<i class="menu-icon fas fa-border-all"></i>
+				<span>Dashboard</span>
+			</a>
+		</li>
+		<li>
+			<a href="#"><i class="menu-icon fas fa-user"></i><span>User</span></a>
+		</li>
+		<li>
+			<a href="#">
+				<i class="menu-icon fas fa-envelope"></i>
+				<span>Messages</span>
+			</a>
+		</li>
+		<li>
+			<a href="#">
+				<i class="menu-icon fas fa-chart-line"></i>
+				<span>Analytics</span>
+			</a>
+		</li>
+	</ul>
+	<!--/Menu Item List -->
+    
+    
+    
+    <!--<a href="#"><i class="menu-icon fas fa-folder-open"></i><span>File Manager</span></a>
+    <a href="#"><i class="menu-icon fas fa-shopping-cart"></i><span>Order</span></a>
+    <a href="#"><i class="menu-icon fas fa-bookmark"></i><span>Saved</span></a>
+    <a href="#"><i class="menu-icon fas fa-cog"></i><span>Settings</span></a>
+	-->
   </div>
 
-  <div class="main">
+  <div id="main-content" class="main ml-220">
     <h2>Home-content</h2>
   </div>
 
