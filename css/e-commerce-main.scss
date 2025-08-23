@@ -1,0 +1,33 @@
+#home .navbar-nav .nav-link.active {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.25
+  ); /* semi-transparent white highlight */
+  border-radius: 0.25rem; /* optional rounded */
+  font-weight: 600;
+}
+
+/* Gradient background for the section */
+.feature-section {
+  background: linear-gradient(135deg, #e3f2fd, #e1bee7);
+}
+
+/* Card hover effect */
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-section h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+}
+
+.feature-section p {
+  font-size: 1.1rem;
+}

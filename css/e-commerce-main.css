@@ -1,0 +1,5 @@
+#home .navbar-nav .nav-link.active {
+  background-color: rgba(255, 255, 255, 0.25); /* semi-transparent white highlight */
+  border-radius: 0.25rem; /* optional rounded */
+  font-weight: 600;
+}/*# sourceMappingURL=e-commerce-main.css.map */

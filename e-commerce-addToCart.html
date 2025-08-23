@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - MedicShop</title>
+    <link rel="stylesheet" href="./css/e-commerce-main.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>MedicShop</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+
+        <div class="cart-container">
+            <div class="cart-item">
+                <img src="./images/medicine.jfif" alt="Medicine 1">
+                <div class="item-details">
+                    <h3>Paracetamol</h3>
+                    <p>Price: $10.99</p>
+                    <p>Quantity: <span class="quantity">2</span></p>
+                </div>
+                <div class="item-total">
+                    <p>Total: $21.98</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+
+            <div class="cart-item">
+                <img src="./images/medicine.jfif" alt="Medicine 2">
+                <div class="item-details">
+                    <h3>Ibuprofen</h3>
+                    <p>Price: $12.99</p>
+                    <p>Quantity: <span class="quantity">1</span></p>
+                </div>
+                <div class="item-total">
+                    <p>Total: $12.99</p>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+
+        <div class="cart-summary">
+            <h3>Cart Summary</h3>
+            <p>Total Items: <span id="total-items">3</span></p>
+            <p>Total Price: <span id="total-price">$34.97</span></p>
+
+            <div class="cart-actions">
+                <button class="clear-cart">Clear Cart</button>
+                <button class="checkout-btn">Proceed to Checkout</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 MedicShop. All rights reserved.</p>
+    </footer>
+
+    <script src="./js/addToCart.js"></script>
+</body>
+
+</html>
