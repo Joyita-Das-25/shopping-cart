@@ -109,14 +109,18 @@
                         <!-- Row for price and quantity -->
                         <div class="d-flex justify-content-between align-items-center mb-3">
                             <!-- Price -->
-                            <span class="fw-bold text-success fs-5">₹599</span>
+                            <h5>₹<span class="fw-bold text-success fs-5" id="cart-value">0</span></h5>
+                            
+                            
 
                             <!-- Quantity selector -->
                             <div class="d-flex align-items-center">
-                                <button class="btn btn-outline-primary btn-sm" onclick="decreaseQty(this)">-</button>
+                                <button class="btn btn-outline-primary btn-sm" onclick="decreaseQty(599)">-</button>
                                 <span class="mx-2 fw-bold" id="qty">0</span>
-                                <button class="btn btn-outline-primary btn-sm" onclick="increaseQty(this)">+</button>
+                                <button class="btn btn-outline-primary btn-sm" onclick="increaseQty(599)">+</button>
+                                <!-- <span class="mx-2 fw-bold" id="qty">1</span> -->
                             </div>
+                            
                         </div>
 
                         <!-- Add to Cart button full width -->
@@ -125,9 +129,9 @@
                 </div>
 
             </div>
-           
 
-            
+            <script src="./js/cart.js"></script>
+
 
         </div>
 
